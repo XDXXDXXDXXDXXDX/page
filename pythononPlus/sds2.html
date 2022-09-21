@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PythonOn</title>
+    <link rel="stylesheet" href="./css/sds2.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <section class="left-group">
+                <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/index.html" class="logo">
+                    <img src="./img/logo.png" alt="PythonOn" style="width:180px;height:38px;">
+                </a>
+                <span class="logo-text">
+                    <img src="./img/huaban.png" alt="能力画像" style="width:20px;height:20px;">
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/inner.html">能力画像</a>
+                </span>
+                <span class="logo-text">
+                    <img src="./img/sousuo.png" alt="目标职业" style="width:20px;height:20px;"> 
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/search.html">目标职业</a>
+                </span>
+                <span class="logo-text">
+                    <img src="./img/shuju.png" alt="数据分析" style="width:20px;height:20px;">
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/shujufenxi.html">数据分析</a>
+                </span>
+            </section>
+            <section class="right-group">
+                <img src="./img/touxiang.png" alt="头像" class="user-img">
+                <a href="#" class="sign-up sign">Jeremy Lin</a>
+            </section>
+        </div>
+    </header>
+    <div class="jingdian"><img src="./img/jingdian.png" alt="经典量表"></div>
+
+    <div class="test">
+        <div class="head">
+            <div class="title">
+                <span>答题进度：</span> 
+                <div class="empty">
+                    <span class="completed" style="width:0px;display:none"></span>
+                </div>
+                <span class="exe-left"><span class="exe-left-main">0</span>/60</span>
+            </div>
+            <p class="time-left">剩余时间：<span class="hour">00</span> : <span class="min">6</span> : <span class="sec">00</span></p>
+        </div>
+        <div class="a-line"></div>
+        <div class="exe-container" style="display:blobk">
+            <div class="exe">
+            <p>1.我喜欢把一件事情做完后再做另一件事。 </p><br>
+            <input type="radio" name="exe1" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe1" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>2.在学习和生活中我喜欢独自筹划，不愿受别人干涉。 </p><br>
+            <input type="radio" name="exe2" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe2" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>3.在集体讨论中，我往往保持沉默。 </p><br>
+            <input type="radio" name="exe3" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe3" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>4.我喜欢做戏剧、音乐、歌舞、新闻采访等方面的工作。 </p><br>
+            <input type="radio" name="exe4" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe4" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>5.每次写信我都一挥而就，不再重复。 </p><br>
+            <input type="radio" name="exe5" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe5" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back first-back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>6.我经常不停地思考某一问题，直到想出正确的答案。 </p><br>
+            <input type="radio" name="exe6" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe6" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>7.对别人借我的和我借别人的东西，我都能记得很清楚。 </p><br>
+            <input type="radio" name="exe7" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe7" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>8.我喜欢抽象思维的工作，不喜欢动手的工作。 </p><br>
+            <input type="radio" name="exe8" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe8" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>9.我喜欢成为人们注意的焦点。 </p><br>
+            <input type="radio" name="exe9" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe9" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>10.我喜欢不时地夸耀一下自己取得的好成就。 </p><br>
+            <input type="radio" name="exe10" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe10" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>11.我很渴望参加探险活动。 </p><br>
+            <input type="radio" name="exe11" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe11" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>12.当我一个独处时，会感到更愉快。 </p><br>
+            <input type="radio" name="exe12" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe12" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>13.我喜欢在做事情前，对此事情做出细致的安排。 </p><br>
+            <input type="radio" name="exe13" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe13" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>14.我讨厌修理自行车、电器一类的工作。 </p><br>
+            <input type="radio" name="exe14" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe14" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>15.我喜欢参加各种各样的聚会。 </p><br>
+            <input type="radio" name="exe15" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe15" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>16.对于将来的职业，我愿意从事虽然工资少、但是比较稳定的职业。 </p><br>
+            <input type="radio" name="exe16" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe16" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>17.我常陶醉于音乐之中。 </p><br>
+            <input type="radio" name="exe17" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe17" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>18.我办事很少思前想后。 </p><br>
+            <input type="radio" name="exe18" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe18" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>19.我在处理学校事务时，经常请示老师。 </p><br>
+            <input type="radio" name="exe19" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe19" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>20.比较普通的游戏，我更喜欢需要动脑子的智力游戏。 </p><br>
+            <input type="radio" name="exe20" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe20" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>21.我很难持续集中注意力在2小时以上。 </p><br>
+            <input type="radio" name="exe21" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe21" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>22.我喜欢亲自动手制作一些小玩意儿，从中得到乐趣。 </p><br>
+            <input type="radio" name="exe22" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe22" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>23.我的动手能力很差。 </p><br>
+            <input type="radio" name="exe23" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe23" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>24.和不熟悉的人交谈对我来说毫不困难。 </p><br>
+            <input type="radio" name="exe24" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe24" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>25.和别人谈判时，我总是很容易放弃自己的观点。 </p><br>
+            <input type="radio" name="exe25" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe25" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>26.我很容易结识同性别的朋友。 </p><br>
+            <input type="radio" name="exe26" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe26" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>27.我做人做事，既不悲观，也不偏激，基本属于不偏不倚的温和型。 </p><br>
+            <input type="radio" name="exe27" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe27" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>28.当我开始做一件事情后，即使碰到再多的困难，我也要执著地干下去。 </p><br>
+            <input type="radio" name="exe28" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe28" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>29.我是一个沉静而不易动感情的人。 </p><br>
+            <input type="radio" name="exe29" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe29" class="chec"><p> B.否</p><br>
+            </div>
+            <div class="exe">
+            <p>30.做事情时，我喜欢避免干扰。 </p><br>
+            <input type="radio" name="exe30" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe30" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>31.我的理想是当一名科学家。 </p><br>
+            <input type="radio" name="exe31" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe31" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>32.与言情小说相比，我更喜欢推理小说。 </p><br>
+            <input type="radio" name="exe32" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe32" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>33.有些人太霸道，有时明明知道他们是对的，也要和他们对着干。 </p><br>
+            <input type="radio" name="exe33" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe33" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>34.我爱幻想。 </p><br>
+            <input type="radio" name="exe34" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe34" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>35.我总是主动地向别人提出自己的建议。 </p><br>
+            <input type="radio" name="exe35" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe35" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>36.我喜欢使用钳子、改锥、螺丝刀、万用表一类的工具。 </p><br>
+            <input type="radio" name="exe36" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe36" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>37.我乐于助人。 </p><br>
+            <input type="radio" name="exe37" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe37" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>38.我比赛或玩游戏，爱与别人打赌。 </p><br>
+            <input type="radio" name="exe38" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe38" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>39.我乐于按父母和老师的安排去做事。 </p><br>
+            <input type="radio" name="exe39" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe39" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>40.如果将来参加工作，我希望能经常换不同的工作来做。 </p><br>
+            <input type="radio" name="exe40" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe40" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>41.与朋友约好了见面，我总留有充裕的时间以免迟到。 </p><br>
+            <input type="radio" name="exe41" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe41" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>42.我喜欢阅读自然科学方面的书籍和杂志。 </p><br>
+            <input type="radio" name="exe42" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe42" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>43.如果掌握一门精湛的手艺并能以此赚到足够多的钱，我会感到满足。 </p><br>
+            <input type="radio" name="exe43" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe43" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>44.我对汽车司机、汽车修理工职业比较感兴趣。 </p><br>
+            <input type="radio" name="exe44" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe44" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>45.听别人谈"家中被盗"一类的事，很难引起我的同情。 </p><br>
+            <input type="radio" name="exe45" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe45" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>46.如果待遇相同，我宁愿当商品推销员，而不愿当图书管理员。 </p><br>
+            <input type="radio" name="exe46" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe46" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>47.我讨厌跟各类机械打交道。 </p><br>
+            <input type="radio" name="exe47" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe47" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>48.我小时候经常把玩具拆开，把里面看个究竟。 </p><br>
+            <input type="radio" name="exe48" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe48" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>49.当接受新任务后，我喜欢以自己的独特方法去完成它。 </p><br>
+            <input type="radio" name="exe49" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe49" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>50.我有文艺方面的天赋。 </p><br>
+            <input type="radio" name="exe50" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe50" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>51.我喜欢把一切安排得整整齐齐、井井有条。 </p><br>
+            <input type="radio" name="exe51" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe51" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>52.我喜欢做一名教师。 </p><br>
+            <input type="radio" name="exe52" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe52" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>53.和一群人在一起的时候，我总想不出恰当的话来说。 </p><br>
+            <input type="radio" name="exe53" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe53" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>54.看情感影片时，我常禁不住眼圈红润。 </p><br>
+            <input type="radio" name="exe54" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe54" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>55.我讨厌学数学。 </p><br>
+            <input type="radio" name="exe55" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe55" class="chec"><p> B.否 </p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>56.假如将我单独一个人留着实验室做实验，我会感到非常无聊。 </p><br>
+            <input type="radio" name="exe56" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe56" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>57.对于急躁、爱发脾气的人，我仍能以礼相待。 </p><br>
+            <input type="radio" name="exe57" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe57" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>58.遇到难解答的题目时，我常常中途放弃，改做下一题。 </p><br>
+            <input type="radio" name="exe58" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe58" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>59.大家公认我是一名勤劳踏实的、愿为大家服务的人。 </p><br>
+            <input type="radio" name="exe59" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe59" class="chec"><p> B.否 </p><br>
+            </div>
+            <div class="exe">
+            <p>60.我喜欢协助老师做班级管理类的工作。 </p><br>
+            <input type="radio" name="exe60" class="chec"><p> A.是</p><br>
+            <input type="radio" name="exe60" class="chec"><p> B.否</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward last-forward">下一页</button>
+            </div>
+            
+            
+               
+    </div>
+
+
+
+    <!-- 不允许注册 -->
+    <!-- <div class="no-sign">
+        <img src="./img/x.png" alt="不能注册" style="width:88px;height:88xp;">
+        <h2 style="color:#4c4b4b">操作错误</h2>
+        <p>本网站未开放注册，敬请期待！</p>
+        <button class="confirm">OK</button>
+    </div> -->
+    <!-- 页脚 -->
+    <!-- <div class="footer">
+        <p>
+            Python123 Version 408 更新于 06月 10日 09:44 关于 Python123 Development Team All rights reserved. <br>
+            苏ICP备16066778号-1
+        </p> 
+    </div> -->
+
+    <script src="./js/sds2.js"></script>    
+</body>
+</html>

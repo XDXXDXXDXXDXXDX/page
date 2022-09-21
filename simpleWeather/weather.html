@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简天气 - 简约而不简单</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="index">
+        <div class="cityBox">
+            <p class="nowCity">NaN</p>
+        </div>
+
+        <div class="todayBox">
+            <p><span class="temperature1">NaN</span><span class="oc">℃</span></p>
+            <p class="weather1">NaN</p>
+            
+        </div>
+
+        <div class="weather2Box">
+            明天天气
+            <div class="day2Temp">
+                <p>最高温度：<span class="day2Max">NaN</span>℃</p>
+                <p>最低温度：<span class="day2Min">NaN</span>℃</p>
+            </div>
+            <p class="weather2">NaN</p>
+            <img src="./img/999.png" alt="天气图标加载中" class="icon">
+            
+        </div><div class="weather3Box">
+            后天天气
+            <div class="day3Temp">
+                <p>最高温度：<span class="day3Max">NaN</span>℃</p>
+                <p>最低温度：<span class="day3Min">NaN</span>℃</p>
+            </div>
+            <p class="weather3">NaN</p>
+            <img src="./img/999.png" alt="天气图标加载中" class="icon">
+        </div>
+
+        <div class="date">
+            天气数据更新时间<p class="update">NaN</p>
+        </div>
+    </div>
+
+    <div class="searchCity">
+        <p>请输入城市名</p>
+        <input type="text" name="city" class="cityName"/>
+        <button class="search">确认</button>
+        <div class="chooseCity">
+                <button class="city">北京</button>
+                <button class="city">上海</button>
+                <button class="city">广州</button>
+                <button class="city">深圳</button>
+                <button class="city">天津</button>
+                <button class="city">成都</button>
+                <button class="city">杭州</button>
+                <button class="city">武汉</button>
+                <button class="city">重庆</button>
+                <button class="city">南京</button>
+                <button class="city">苏州</button>
+                <button class="city">西安</button>
+        </div>
+        <button class="back">返回</button>
+    </div>
+
+    <div class="footer">v1.1</div>
+    
+    <script src="main.js"></script>
+    <script src="searchCity.js"></script>
+</body>
+</html>

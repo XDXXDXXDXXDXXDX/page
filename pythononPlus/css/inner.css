@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: "Microsoft YaHei"; */
+}
+
+body {
+    height: 100%;
+    background-color: #eff5fb;
+}
+/* 导航栏部分css */
+header {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    /* border: 1px black solid; */
+    position: fixed;
+    border-bottom: 2px solid #e9e7e7;
+    display: block;
+    background-color: #fff;
+    z-index: 5;
+    top: 0;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left-group {
+    float: left;
+}
+.logo-text{
+    margin-bottom: 10px;
+    margin-left: 24px;
+}
+
+.logo-text a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #535353;
+    text-decoration: none;
+    vertical-align: 10px;
+}
+
+.logo-text img {
+    vertical-align: 6px;    
+}
+
+.right-group {
+    float: right;
+    margin-right: 46px;
+}
+
+.sign {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.sign-up {
+    color: #000;
+}
+
+.user-img {
+    vertical-align: -12px; 
+    width: 36px;       
+}
+
+a:active {
+    opacity:0.8;
+}
+
+.jingdian {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.jingdian img {
+    width: 100%;
+}
+
+.test {
+    /* text-align: center; */
+    width: 1270px;
+    height: 680px;
+    background-color: #fff;
+    border-radius: 14px;
+    margin: 24px auto 0 auto;
+    font-family: "STSong";
+}
+
+.head {
+    height: 66px;
+    font-size: 20px;
+    /* padding-left: 20px; */
+}
+
+.title {
+    vertical-align: -24px;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.character, .ability, .motivation {
+    padding: 0 20px 16px 20px;
+}
+
+.choose {
+    border-bottom: 4px solid #0099ff;
+}
+
+
+.a-line {
+    width: 100%;
+    height: 2px;
+    background-color: #c9caca
+}
+
+.test-sth-container {
+    width: 1270px;
+}
+
+.test-sth {
+    box-sizing: border-box;
+    width: 350px;
+    height: 240px;
+    border: 1px solid #bab9b9;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 40px 33px 0 33px;
+    padding: 10px 14px;
+    position: relative;
+}
+
+.test-sth h1 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.test-sth span {
+    border: 1px solid #0099ff;
+    color: #0099ff;
+    font-size: 14px;
+    height: 24px;
+    border-radius: 12px;
+    width: 66px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    margin: 8px 4px;
+}
+
+.test-sth p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.test-sth a {
+    display: block;
+    width: 88px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0099ff;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.test-sth div {
+    width: 200px;
+    left: 20px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.test-sth div span{
+    font-size: 15px;
+    color: #c0bfbf;
+    border: 0;
+    display: inline;
+    text-align: center;
+    line-height: 24px;
+    margin: 0; 
+    vertical-align: 4px;;  
+}
+
+/* 页脚的css */
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 600px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 90px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* 注册出错提示框css */
+.no-sign {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+.no-sign p{
+    font-size: 15px;
+    color: #838181;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.confirm {
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #0099ff;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.confirm:hover {
+    cursor: pointer;
+}
+
+.wait {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0099ff;
+    padding: 90px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

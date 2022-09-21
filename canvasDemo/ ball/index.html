@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    div {
+      display: flex;
+    }
+  
+
+    canvas {
+      border: 1px solid #00ff37;
+      margin: 10px auto 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <canvas id="canvas" width="300" height="200"></canvas>
+    <canvas id="canvas2" width="300" height="200"></canvas>
+    <canvas id="canvas3" width="300" height="200"></canvas>
+  </div>
+
+  <script>
+  let balls = []
+  var Ball = function(context, x, y, vx, vy, color) {
+    this.left = x ? x : 0
+    this.top = y ? y : 0
+    this.radius = 16
+    this.velocityX = vx ? vx: 3
+    this.velocityY = vy ? vy : 2
+    this.context = context
+    this.color = color ? color : '#000'
+  }
+
+  Ball.prototype = {
+    paint: function() {
+      this.context.beginPath()
+      this.context.arc(this.left + this.radius, this.top + this.radius, 
+                       this.radius, 0, Math.PI * 2, false)
+      this.context.fillStyle = this.color
+      this.context.fill()
+    },
+
+    move: function() {
+      this.left += this.velocityX
+      this.top  += this.velocityY
+    }
+  }
+
+  function handleEdgeCollisions(ball) {
+    var ballRight = ball.left + ball.radius * 2,
+      ballBottom = ball.top + ball.radius * 2
+
+    if(ball.left < 0) {
+      ball.left = 0
+      if(ball.context === context3) {
+        return 
+      }
+      ball.velocityX = -ball.velocityX
+    } else if(ballRight > canvas.width) {
+      ball.left = canvas.width - ball.radius * 2
+      if(ball.context === context3) {
+        return 
+      }
+      ball.velocityX = -ball.velocityX
+    }
+
+    if(ball.top < 0) {
+      ball.top = 0
+      if(ball.context === context3) {
+        return 
+      }
+      ball.velocityY = -ball.velocityY
+    } else if(ballBottom > canvas.height) {
+      ball.top = canvas.height - ball.radius * 2
+      if(ball.context === context3) {
+        return 
+      }
+      ball.velocityY = -ball.velocityY
+    }
+  }
+
+  function animate(time) {
+    context.clearRect(0, 0, canvas.width, canvas.height)
+    context3.clearRect(0, 0, canvas.width, canvas.height)
+    for (let ball of balls) {
+      ball.move()
+      handleEdgeCollisions(ball)
+      ball.paint()
+    }
+
+
+
+    requestAnimationFrame(animate)
+  }
+  const ballList = [
+    {},
+    { x: 10, y: 10, vx: 4, vy: 2, color: '#00ff37'},
+    { x: 50, y: 50, vx: 3, vy: 6, color: '#ff0000'},
+    { x: 150, y: 50, vx: 3, vy: 3, color: '#ffa600'},
+    { x: 50, y: 250, vx: 2, vy: 5, color: '#ff0000'},
+    { x: 350, y: 50, vx: 1, vy: 1, color: '#ff0000'},
+    { x: 50, y: 250, vx: 6, vy: 7, color: '#0004ff'},
+    { x: 150, y: 50, vx: 2, vy: 4, color: '#ff0000'}
+  ]
+  var canvas = document.getElementById('canvas'), context = canvas.getContext('2d')
+  var canvas2 = document.getElementById('canvas2'), context2 = canvas2.getContext('2d')
+  var canvas3 = document.getElementById('canvas3'), context3 = canvas3.getContext('2d')
+  for (let config of ballList) {
+    balls.push(new Ball(context, config.x, config.y, config.vx, config.vy, config.color))
+  }
+  for (let config of ballList) {
+    balls.push(new Ball(context2, config.x, config.y, config.vx, config.vy, config.color))
+  }
+  for (let config of ballList) {
+    balls.push(new Ball(context3, config.x, config.y, config.vx, config.vy, config.color))
+  }
+   
+    // balls.push(new Ball(context, 10, 10, 10, 3))
+
+  for (ball of balls) {
+    ball.paint()
+  }
+
+  requestAnimationFrame(animate)
+  </script>
+</body>
+</html>

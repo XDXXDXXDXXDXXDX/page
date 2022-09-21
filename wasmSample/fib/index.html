@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fibonacci</title>
+</head>
+
+<body>
+  <script>
+    function fib(n) {
+      if (n <= 1) { return 1; }
+      return fib(n - 1) + fib(n - 2);
+    }
+    console.time('fib-js');
+    console.log('fib(45): ', fib(45));
+    console.timeEnd('fib-js');
+  </script>
+  <script>
+    WebAssembly.instantiateStreaming(fetch('fib.wasm'))
+      .then(obj => {
+        console.time('fib-wasm');
+        console.log('fib(45): ', obj.instance.exports._Z3fibi(45));
+        console.timeEnd('fib-wasm');
+      });
+  </script>
+</body>
+
+</html>

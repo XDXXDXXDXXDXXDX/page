@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适配与全屏 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- UC强制全屏 --> 
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <title>Lighting Dark</title>
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="assets/frame/fontAwesome/css/all.css"> -->
+    <!-- 通配css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 加载页面css -->
+    <link rel="stylesheet" href="css/loadAssets.css">
+    <!-- 未进入游戏前的ui css -->
+    <link rel="stylesheet" href="css/uiOutward.css">
+    <!-- 游戏场景css -->
+    <link rel="stylesheet" href="css/gameStage.css">
+    <!-- jquery -->
+    <script src="assets/frame/jquery-3.3.1.min.js"></script>
+    <!-- 加载资源的动画 -->
+    <script>
+        let oriBottom, bottom38, moonDy, loadSpeed = 2, loadAll = false;//用于计算月亮位置参数的初始化
+        $(() => {
+            oriBottom = parseInt($('.rise-moon').css('bottom'));
+            bottom38 = window.innerHeight * 0.38; // 计算bottom38%时的高度值
+            moonDy = bottom38 + Math.abs(oriBottom);
+            loadingAnim();
+            function loadingAnim() {
+                $('.rise-moon').css('bottom', (index, value) => {
+                    return (parseInt(value) + loadSpeed * Config.window.scale) + 'px';
+                });
+            
+                let loadPer = Math.floor((parseInt($('.rise-moon').css('bottom')) - oriBottom) / moonDy * 100);
+                loadPer = loadPer >= 100 ? 99 : loadPer;
+                $('.load-percent').html(loadPer + '%'); // bottom:38%为月亮目标位置
+                if(loadAll) {
+                    loadDone();
+                }
+
+                if(parseInt($('.rise-moon').css('bottom')) < bottom38) {
+                    requestAnimFrame(loadingAnim);
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="uiIndex">
+        <div class="head-ctn">
+            <div class="rise-moon">
+                <img src="./assets/img/index/moon.png" alt="月亮">
+                <p class="load-percent">0%</p>
+            </div>
+            <!-- <div class="start-game-customize"><p class="begin-test">自由创作</p></div> -->
+        </div>
+    </div>
+    <div id="uiStatistic" style="display:none">
+        <button class="go2index">返回首页</button>
+    </div>
+    <div id="uiSelectLv" style="display:none">
+        <div class="lv-public">
+            <img class="lt-moon scale-05" src="./assets/img/index/moon.png" alt="月亮">
+            <ul class="fun-btn-box">
+                <li><img src="./assets/img/index/goindex.png" alt="去首页" class="fun-btn go2index"></li>
+                <li><img src="./assets/img/index/sound.png" alt="音乐" class="fun-btn volume" onclick="toggleSound()"></li>
+                <li><img src="./assets/img/index/help.png" alt="帮助" class="fun-btn show-help"></li>
+            </ul>
+            <ul class="change-lv">
+                <li><img src="./assets/img/left.png" alt="上一关" class="see-pre-lv see-lv"></li>
+                <li><img src="./assets/img/right.png" alt="下一关" class="see-next-lv see-lv"></li>
+            </ul>
+        </div>
+    
+        <div id="Level1" class="lv-cta">
+            <ul class="star-box">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+        </div>
+        <div id="Level2" class="lvn lv-cta">
+            <ul class="star-box">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+        </div>
+        <div id="Level3" class="lvn cant-play lv-cta">
+            <ul class="star-box">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+            <img src="./assets/img/lock.png" alt="不允许玩" class="lock-lv">
+        </div>
+        <div id="Level4" class="lvn cant-play lv-cta">
+            <ul class="star-box">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+            <img src="./assets/img/lock.png" alt="不允许玩" class="lock-lv">
+        </div>
+        <div id="Level5" class="lvn cant-play lv-cta">
+            <ul class="star-box">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+            <img src="./assets/img/lock.png" alt="不允许玩" class="lock-lv">
+        </div>
+    </div>
+    <div id="uiGamming" style="display:none">
+        <div class="win-level menu">
+            <img src="./assets/img/success.png" alt="成功" class="win-img">
+            <ul class="star">
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+                <li><img src="assets/img/starEmpty.png" alt="star" class="star-img"></li>
+            </ul>
+            <div class="win-btn">
+                <button class="replay">重新开始</button>
+                <button class="back2select-lv">选择关卡</button>
+                <button class="next-lv">下一关</button>
+            </div>
+        </div>
+        <canvas id="gameStage" width="100px" height="100px"></canvas>
+        <div class="changeDeg"><input type="range" min="0" max="360" class="deg_range" oninput="Game.changeLDeg(this, 0)"></div>
+        <ul class="fun-btn-box">
+            <li><img src="./assets/img/index/menu.png" alt="菜单" class="fun-btn show-game-menu" onclick="toggleMenu()"></li>
+            <!-- <li><img src="./assets/img/index/goindex.png" alt="去首页" class="fun-btn go2index"></li> -->
+            <li><img src="./assets/img/index/exit.png" alt="退出" class="fun-btn back2select-lv game-fun"></li>
+            <li><img src="./assets/img/index/replay.png" alt="重新开始" class="replay fun-btn game-fun"></li>
+            <li><img src="./assets/img/index/sound.png" alt="音乐" class="fun-btn volume game-fun" onclick="toggleSound()"></li>
+            <li><img src="./assets/img/index/help.png" alt="帮助" class="fun-btn show-help game-fun"></li>
+        </ul>
+    </div>
+    <div class="select-help">
+        <ul class="help-cta">
+            <li class="how-to-play">游戏玩法</li>
+            <li class="get-3-star">三星攻略</li>
+        </ul>
+        <!-- <div class="version-info">
+            <p>version:1.0.1</p>
+        </div> -->
+    </div>
+    <div class="extra-ctn">
+        <ul class="extra-cta">
+            <li class="unlock-all">解锁所有关卡</li>
+            <li class="reset-level">重置所有关卡</li>
+        </ul>
+        <div class="version-info">
+            <p>version:1.0.1</p>
+        </div>
+    </div>
+    <div id="uiInfo" style="display:none">
+        <div class="tur-box">
+            <h2>HOW TO PLAY</h2>
+            <div class="help-info">  
+                <div class="tur-cta first">
+                    <img src="assets/img/tutorial/turMoon.gif" alt="控制月亮">
+                    <p>滑动屏幕下方的滚动条可以调整月亮发射光线的角度。</p>
+                </div>
+                <div class="tur-cta">
+                    <img src="assets/img/tutorial/turMirror.gif" alt="控制镜子">
+                    <p>可以拖动改变镜子的位置，白色一面可以反射，蓝色一面不可以</p>
+                </div>
+                <div class="tur-cta">
+                    <img src="assets/img/tutorial/turWin.gif" alt="获得胜利">
+                    <p>使光线持续照射房子一定时长，给目标充满能量即可通关。不同的通关方式会有不同的星级评定</p>
+                </div>
+                <div class="tur-cta">
+                    <img src="assets/img/tutorial/mi.png" alt="秘密">
+                    <p>还有几个隐藏操作，待你去发现！</p>
+                </div>
+            </div>
+            <div class="close-cta">
+                <button class="close-tur">嗨起来吧</button>
+            </div>
+        </div>
+    </div>
+    <div id="uiStarTur" style="display:none">
+        <div class="tur-box">
+            <h2>三星攻略</h2>
+            <div class="table-cta">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>一星</th>
+                        <th>两星</th>
+                        <th>三星</th>
+                    </tr>
+                    <tr>
+                        <td>第一关</td>
+                        <td>光线数量大于5</td>
+                        <td>光线数量不大于5</td>
+                        <td>光线数量不大于3</td>
+                    </tr>
+                    <tr>
+                        <td>第二关</td>
+                        <td>光线数量大于5</td>
+                        <td>光线数量不大于5</td>
+                        <td>光线数量不大于3</td>
+                    </tr>
+                    <tr>
+                        <td>第三关</td>
+                        <td>两只狼都入侵了家园</td>
+                        <td>只有一只狼入侵家园</td>
+                        <td>没有狼入侵家园</td>
+                    </tr>
+                    <tr>
+                        <td>第四关</td>
+                        <td>不止一只狼入侵家园</td>
+                        <td>只有一只狼入侵家园</td>
+                        <td>没有狼入侵家园</td>
+                    </tr>
+                    <tr>
+                        <td>第五关</td>
+                        <td>秘</td>
+                        <td>秘</td>
+                        <td>发挥想象力</td>
+                    </tr>
+                        
+                </table>
+            </div>
+            <div class="close-cta">
+                <button class="close-tur">嗨起来吧</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主逻辑控制 -->
+    <script src="config.js"></script>
+    <script src="js/funBox.js"></script>
+    <script src="js/UIController.js"></script>
+    <script src="js/loadAssets.js"></script>
+    <!-- 游戏对象 -->
+    <script src="js/element/element.js"></script>
+    <script src="js/element/laserTransmitter.js"></script>
+    <script src="js/element/lightHome.js"></script>
+    <script src="js/element/mirror.js"></script>
+    <script src="js/element/brick.js"></script>
+    <script src="js/element/cloud.js"></script>
+    <script src="js/element/wall.js"></script>
+    <script src="js/element/wolf.js"></script>
+    <!-- 游戏控制器 -->
+    <script src="js/gameController.js"></script>  
+</body>
+</html>

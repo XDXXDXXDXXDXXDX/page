@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Microsoft YaHei";
+}
+
+body {
+    height: 100%;
+}
+
+a:active {
+    opacity:0.8;
+}
+
+/* 导航栏部分css */
+header {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    /* border: 1px black solid; */
+    position: fixed;
+    border-bottom: 2px solid #e9e7e7;
+    display: block;
+    background-color: #fff;
+    top: 0;
+    z-index: 5;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left-group {
+    float: left;
+}
+
+.right-group {
+    float: right;
+}
+
+.sign-up {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 126px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #000;
+}
+/* 登陆出错提示 */
+.error {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    background-color: #d0011b;
+    text-align: center;
+    line-height: 80px;
+    z-index: 6;
+    left: 0;
+}
+
+.error p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 登陆框相关css */
+.sign-in {
+    margin: 180px auto 0 auto;
+    width: 450px;
+    /* height: 300px; */
+    text-align: center;
+}
+
+.sign-in h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-sth {
+    width: 450px;
+    height: 50px;
+    border: 6px solid #eeeeee;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-indent: 1em;
+    font-weight: bold;
+    outline: none;
+}
+
+.input-sth:focus {
+    border: 6px solid #0099ff;    
+}
+
+.input-sth::placeholder { 
+    color: #eeeeee;
+}
+
+.get-help {
+    width: 30px;
+    height: 30px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    border: 5px solid #eeeeee;
+    border-radius: 10px;
+    outline: none;
+}
+
+.get-help:checked {
+    background: url("../img/v.png") no-repeat center;
+    border: 5px solid #0099ff;
+}
+
+.sign-in span {
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: 8px;
+}
+
+.confirm-btn {
+    width:250px;
+    height:80px;
+    border-radius:40px;
+    border: 0;
+    background-color:#0099ff;
+    color: #fff;
+    font-size:36px;
+    font-weight:bold;
+    margin-top:20px;
+    outline: none;
+}
+
+.confirm-btn:hover {
+    cursor: pointer;
+}
+
+/* 页脚的css */
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 600px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 90px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* 注册出错提示框css */
+.no-sign {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+.no-sign p{
+    font-size: 15px;
+    color: #838181;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.confirm {
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #0099ff;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.confirm:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+    
+
+

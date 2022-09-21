@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Microsoft YaHei";
+}
+
+body {
+    height: 100%;
+    background-color: #eff5fb;
+}
+/* 导航栏部分css */
+header {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    /* border: 1px black solid; */
+    position: fixed;
+    border-bottom: 2px solid #e9e7e7;
+    display: block;
+    background-color: #fff;
+    z-index: 5;
+    top: 0;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left-group {
+    float: left;
+}
+.logo-text{
+    margin-bottom: 10px;
+    margin-left: 24px;
+}
+
+.logo-text a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #535353;
+    text-decoration: none;
+    vertical-align: 10px;
+}
+
+.logo-text img {
+    vertical-align: 6px;    
+}
+
+.right-group {
+    float: right;
+    margin-right: 46px;
+}
+
+.sign {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.sign-up {
+    color: #000;
+}
+
+.user-img {
+    vertical-align: -12px; 
+    width: 36px;       
+}
+
+a:active {
+    opacity:0.8;
+}
+
+.jingdian {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.jingdian img {
+    width: 100%;
+}
+
+.test {
+    /* text-align: center; */
+    width: 1270px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 14px;
+    margin: 24px auto 100px auto;
+    font-family: "STSong";
+    position: relative;
+}
+
+.head {
+    height: 66px;
+    line-height: 66px;
+}
+
+.title {
+    font-size: 18px;
+    margin-left: 20px;
+    
+    
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.title .empty {
+    width: 800px;
+    height: 16px;
+    border: 2px solid #b8defb;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: -4px;   
+    position: relative;
+}
+
+.title .empty .completed{
+    display:block;
+    height:16px;
+    background-color:#00a0e9;
+    border: 2px solid #00a0e9;
+    border-radius: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -2px;
+    margin-left: -2px;
+
+}
+
+.exe-left {
+    margin-left: 4px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.time-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 66px;
+    color: #fff;
+    background-color: #00a0e9;
+    border-top-right-radius: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 66px;
+    font-size: 20px;
+}
+
+.a-line {
+    width: 100%;
+    height: 2px;
+    background-color: #c9caca
+}
+
+.exe-container {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.chec {
+    width: 28px;
+    height: 28px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    border: 3px solid #eeeeee;
+    border-radius: 14px;
+    outline: none;
+    vertical-align: -6px;
+}
+
+.chec:checked {
+    background: url("../img/doc.png") no-repeat center;
+    background-size: 12px 12px;
+    border: 3px solid #00b7ee;
+}
+
+.exe {
+    margin-bottom: 40px;
+}
+
+.exe p {
+    font-size: 20px;
+    font-weight: bold; 
+    line-height: 36px;
+    display: inline;
+}
+
+.exe-container button {
+    width: 140px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00a0e9;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    margin: 100px 0 60px 100px;
+    outline: none;
+}
+
+.exe-container button:hover {
+    cursor: pointer;
+}
+
+.exe-container .forward {
+    margin-left: 550px ;
+}
+/* 页脚的css */
+/* .footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 600px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 90px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    width: 900px;
+    margin: 0 auto;
+} */
+
+/* 注册出错提示框css */
+/* .no-sign {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+.no-sign p{
+    font-size: 15px;
+    color: #838181;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.confirm {
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #0099ff;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.confirm:hover {
+    cursor: pointer;
+}
+
+.wait {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0099ff;
+    padding: 90px 0;
+} */
+
+.exe-container .first-back, .exe-container .last-forward{
+    background-color: #80d3f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

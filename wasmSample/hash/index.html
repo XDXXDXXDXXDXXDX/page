@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hash</title>
+  <script src="md5.js"></script>
+  <script src="js-md5.js"></script>
+</head>
+
+<body>
+  <script>
+    const test = 'test'
+    const testMult10 = 'testtesttesttesttesttesttesttesttesttest'
+    const testMult50 = 'testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest'
+    const testMult100 = 'testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest'
+    // CryptoJS.MD5('demo')
+    console.time('md5-js');
+    for (let i = 0; i < 100000; i++) {
+      CryptoJS.MD5(testMult10)
+    }
+    console.timeEnd('md5-js');
+  </script>
+  <script>
+    // await hashwasm.md5('demo')
+    (async () => {
+      console.time('md5-wasm');
+      for (let i = 0; i < 100000; i++) {
+        await hashwasm.md5(testMult10)
+      }
+      console.timeEnd('md5-wasm');
+    })()
+
+  </script>
+</body>
+
+</html>

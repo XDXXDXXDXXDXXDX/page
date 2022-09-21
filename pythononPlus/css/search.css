@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* font-family: "Microsoft YaHei"; */
+}
+
+body {
+    height: 100%;
+    background-color: #eff5fb;
+}
+/* 导航栏部分css */
+header {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    /* border: 1px black solid; */
+    position: fixed;
+    border-bottom: 2px solid #e9e7e7;
+    display: block;
+    background-color: #fff;
+    z-index: 5;
+    top: 0;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left-group {
+    float: left;
+}
+.logo-text{
+    margin-bottom: 10px;
+    margin-left: 24px;
+}
+
+.logo-text a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #535353;
+    text-decoration: none;
+    vertical-align: 10px;
+}
+
+.logo-text img {
+    vertical-align: 6px;    
+}
+
+.right-group {
+    float: right;
+    margin-right: 46px;
+}
+
+.sign {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.sign-up {
+    color: #000;
+}
+
+.user-img1 {
+    vertical-align: -12px; 
+    width: 36px;       
+}
+
+a:active {
+    opacity:0.8;
+}
+
+.search {
+    width: 530px;
+    margin: 150px auto 0 auto;
+    position: relative;
+}
+
+.search img {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+.search-input {
+    width: 530px;
+    height: 40px;
+    border: 4px solid #0099ff;
+    border-radius: 10px;
+    background: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-indent: 1.5em;
+    line-height: 40px;
+    outline: none;
+}
+
+.search-input::placeholder { 
+    color: #838383;
+}
+
+.know {
+    width: 1900px;
+    height: 100%;
+    margin: 56px auto 0 auto;
+    background-color: #fff;
+}
+
+.show {
+    background-color: #eff5fb;    
+}
+
+.know-content, .class-content{
+    background-color: #fff;
+    height: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.head-2 {
+    width: 100%;
+    /* margin: 0 auto; */
+    background: #eff5fb;
+    position: relative;
+    top: 0;
+}
+
+/* .help {
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+} */
+
+.head-like {
+    display: inline-block;
+    width: 50%;
+    height: 36px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-align: center;
+    background-color: #eff5fb;
+    line-height: 36px;
+}
+
+.head-like:hover {
+    cursor: pointer;
+}
+
+.choose {
+    background-color: #fff;
+    border-top: 6px solid #0099ff;    
+}
+
+.cont {
+    width: 1000px;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    margin-left: -500px;
+}
+
+.class-juti {
+    width: 300px;
+    height: 340px;
+    border-radius: 6px;
+    font-family: "华文楷体";
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    outline: none;  
+}
+
+.a-cont {
+    display: inline-block;
+    margin: 0 10px 20px 10px;   
+    border-radius: 6px;
+    position: relative;
+}
+.change-container {
+    width: 300px;
+    height: 340px;
+    border-radius: 6px;
+    z-index: 0;
+    position: relative;    
+}
+.a-cont:hover .change-container{
+    animation-name: scaleDraw; /*关键帧名称*/
+    animation-timing-function: linear; /*动画的速度曲线*/
+    animation-iteration-count: 1;  /*动画播放的次数*/
+    animation-duration: 1s; /*动画所花费的时间*/
+    animation-fill-mode: forwards;
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: linear; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+    -webkit-animation-duration: 600; /*动画所花费的时间*/
+    -webkit-animation-fill-mode: forwards;    
+}
+
+.a-cont:hover {
+    box-shadow: 0px 2px 14px;
+    -webkit-box-shadow: 0px 2px 14px;
+}
+
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+         transform: scale(1); /* 开始为原始大小 */
+        /* box-shadow: 0px 0px 0px;
+        -webkit-box-shadow: 0px 0px 0px;   */
+    }
+    100%{
+        transform: scale(1.01);
+        /* box-shadow: 0px 1px 10px;
+        -webkit-box-shadow: 0px 1px 10px;   */
+    }
+}
+
+.text-container {
+    position: absolute;
+    top: 90px;
+    z-index: 2; 
+}
+
+.black-color {
+    background-color: #262626;
+}
+
+.black-color2{
+    background-color: #1b1b1b;
+}
+
+.red-color {
+    background-color: #e4405f;
+}
+
+.red-color2{
+    background-color: #a8364b;
+}
+
+.green-color {
+    background-color: #53c86f;
+}
+
+.green-color2{
+    background-color: #439557;
+}
+
+.className {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 0 30px;
+    width: 240px;
+}
+
+.school {
+    font-size: 26px;
+    margin: 0 0 0 30px;
+}
+
+.class-foot {
+    width: 300px;
+    height: 56px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    font-family: "Microsoft YaHei";
+}
+
+.userNum {
+    font-size:18px;
+    vertical-align: 3px;      
+}
+
+.user-img {
+    width:24px;
+    height:24px;
+    margin:16px 0 0 30px    
+}
+
+.classUrl {
+    font-size: 14px;
+    vertical-align: 2px;   
+    position: absolute;
+    top:18px;
+    right: 10px;
+}
+
+.book1 {
+    width:53px;
+    height:50px;
+    margin:34px 0 0 30px
+}
+
+.book2 {
+    width:59px;
+    height:50px;
+    margin:34px 0 0 30px
+}
+
+.book3 {
+    width:50px;
+    height:52px;
+    margin:34px 0 0 30px;
+}
+
+.bubble-boss {
+    width: 1200px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.bubble-div {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    overflow:hidden;
+    border-radius: 64px;
+    overflow: hidden;
+}
+
+.bubble-div .bubble {
+    width: 128px;
+    height: 128px;
+    border-radius: 64px;  
+    /* overflow:hidden;  */
+}
+
+/* .bubble-bian{
+    position: absolute;
+} */
+
+.bubble-div .bubble-name {
+    font-size: 15px;
+    position: absolute;
+    width: 114px;
+    top: 28px;
+    left: 50%;
+    margin-left: -57px;
+    font-family: "幼圆";
+    text-align: center;
+}
+
+.bubble-div .bubble-percent {
+    width:70px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -35px;
+    font-size: 34px;
+    color: #0E4C94;
+    line-height: 30px;
+}
+
+/* 不同气泡的定位 */
+.bubble1 {
+    top: 60px;
+    left: 838px; 
+}
+.bubble2 {
+    top: 284px;
+    left: 838px; 
+}
+.bubble3 {
+    top: 278px;
+    left: 614px; 
+}
+.bubble4 {
+    top: 114px;
+    left: 672px; 
+}
+
+.bubble5 {
+    top: 270px;
+    left: 420px; 
+}
+.bubble6 {
+    top: 438px;
+    left: 348px; 
+}
+.bubble7 {
+    top: 604px;
+    left: 416px; 
+}
+.bubble8 {
+    top: 438px;
+    left: 588px; 
+}
+
+.bubble9 {
+    top: 730px;
+    left: 362px; 
+}
+.bubble10 {
+    top: 897px;
+    left: 418px; 
+}
+.bubble11 {
+    top: 951px;
+    left: 584px; 
+}
+.bubble-container .bubble11 .bubble-name {
+    font-size: 13px;
+    top: 18px;
+    width: 90px;
+    margin-left: -45px;
+}
+.bubble12 {
+    top: 726px;
+    left: 585px; 
+}
+
+.bubble13 {
+    top: 872px;
+    left: 1063px; 
+}
+.bubble14 {
+    top: 1038px;
+    left: 1008px; 
+}
+.bubble15 {
+    top: 1094px;
+    left: 840px; 
+}
+.bubble16 {
+    top: 870px;
+    left: 840px; 
+}
+
+.bubble17 {
+    top: 731px;
+    left: 1316px; 
+}
+.bubble18 {
+    top: 899px;
+    left: 1256px; 
+}
+.bubble19 {
+    top: 728px;
+    left: 1091px; 
+}
+.bubble-container .bubble19 .bubble-name {
+    font-size: 13px;
+    top: 18px;
+    width: 90px;
+    margin-left: -45px;
+}
+
+.bubble20 {
+    top: 274px;
+    left: 984px; 
+}
+.bubble21 {
+    top: 142px;
+    left: 1131px; 
+}
+.bubble22 {
+    top: 168px;
+    left: 1324px; 
+}
+.bubble23 {
+    top: 350px;
+    left: 1424px; 
+}
+.bubble24 {
+    top: 530px;
+    left: 1364px; 
+}
+.bubble25 {
+    top: 583px;
+    left: 1184px; 
+}
+.bubble26 {
+    top: 356px;
+    left: 1196px; 
+}
+.bubble-container .bubble26 .bubble-name {
+    font-size: 13px;
+    top: 18px;
+    width: 90px;
+    margin-left: -45px;
+}
+.bubble27{
+    width: 216px;
+    height: 216px;
+    border-radius: 108px;   
+    overflow: hidden;
+    top: 534px;;
+    left: 794px;
+    position: absolute;
+}
+.bubble-center {
+    /* position: absolute;
+    top: 534px;;
+    left: 794px; */
+    width: 216px;
+    border-radius: 108px;
+    /* overflow: hidden; */
+}
+
+.bubble-div:hover .bubble, .bubble27:hover .bubble-center{
+    animation-name: bubble-scale; /*关键帧名称*/
+    animation-timing-function: linear; /*动画的速度曲线*/
+    animation-iteration-count: 1;  /*动画播放的次数*/
+    animation-duration: 1s; /*动画所花费的时间*/
+    animation-fill-mode: forwards;
+    -webkit-animation-name: bubble-scale; /*关键帧名称*/
+    -webkit-animation-timing-function: linear; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+    -webkit-animation-duration: 600; /*动画所花费的时间*/
+    -webkit-animation-fill-mode: forwards; 
+    box-shadow: 0px 2px 14px;
+    -webkit-box-shadow: 0px 2px 14px;   
+}
+
+.bubble-div:hover, .bubble27 {
+    cursor: pointer;
+    box-shadow: 0px 2px 14px;
+    -webkit-box-shadow: 0px 2px 14px; 
+}
+
+@keyframes bubble-scale {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+         transform: scale(1); /* 开始为原始大小 */
+        /* box-shadow: 0px 0px 0px;
+        -webkit-box-shadow: 0px 0px 0px;   */
+    }
+    100%{
+        transform: scale(1.1);
+        /* box-shadow: 0px 1px 10px;
+        -webkit-box-shadow: 0px 1px 10px;   */
+    }
+}
+/* 页脚的css */
+/* .footer {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: #c7c7c7;
+    text-align: center;
+    margin-top: 600px;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 90px;
+    box-sizing: border-box;
+} */
+
+/* .footer p {
+    width: 900px;
+    margin: 0 auto;
+} */
+
+/* 注册出错提示框css */
+/* .no-sign {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    display: none;
+} */
+
+/* .no-sign p{
+    font-size: 15px;
+    color: #838181;
+    margin-top: 20px;
+    font-weight: 500;
+} */
+
+/* .confirm {
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #0099ff;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.confirm:hover {
+    cursor: pointer;
+}
+
+.wait {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #f2f2f2;
+    border-radius: 18px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    z-index: 5;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0099ff;
+    padding: 90px 0;
+} */
+

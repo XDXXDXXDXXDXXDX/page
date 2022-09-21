@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PythonOn</title>
+    <link rel="stylesheet" href="./css/reply2.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <section class="left-group">
+                <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/index.html" class="logo">
+                    <img src="./img/logo.png" alt="PythonOn" style="width:180px;height:38px;">
+                </a>
+                <span class="logo-text">
+                    <img src="./img/huaban.png" alt="能力画像" style="width:20px;height:20px;">
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/inner.html">能力画像</a>
+                </span>
+                <span class="logo-text">
+                    <img src="./img/sousuo.png" alt="目标职业" style="width:20px;height:20px;"> 
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/search.html">目标职业</a>
+                </span>
+                <span class="logo-text">
+                    <img src="./img/shuju.png" alt="数据分析" style="width:20px;height:20px;">
+                    <a href="https://xdxxdxxdxxdxxdx.github.io/pythononplus/shujufenxi.html">数据分析</a>
+                </span>
+            </section>
+            <section class="right-group">
+                <img src="./img/touxiang.png" alt="头像" class="user-img">
+                <a href="#" class="sign-up sign">Jeremy Lin</a>
+            </section>
+        </div>
+    </header>
+    <div class="jingdian"><img src="./img/jingdian.png" alt="经典量表"></div>
+
+    <div class="test">
+        <div class="head">
+            <div class="title">
+                <span>答题进度：</span> 
+                <div class="empty">
+                    <span class="completed" style="width:0px;display:none"></span>
+                </div>
+                <span class="exe-left"><span class="exe-left-main">0</span>/40</span>
+            </div>
+            <p class="time-left">剩余时间：<span class="hour">00</span> : <span class="min">08</span> : <span class="sec">00</span></p>
+        </div>
+        <div class="a-line"></div>
+        <div class="exe-container" style="display:blobk">
+            <div class="exe">
+            <p>1、遇到困难时，难免会产生一些消极的想法</p><br>
+            <input type="radio" name="exe1" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe1" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe1" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe1" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe1" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>2、周围的人能帮助自己减轻烦恼和压力</p><br>
+            <input type="radio" name="exe2" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe2" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe2" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe2" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe2" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>3、常能迅速适应逆境和解决困难</p><br>
+            <input type="radio" name="exe3" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe3" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe3" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe3" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe3" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>4、不愉快的事很容易引起情绪波动</p><br>
+            <input type="radio" name="exe4" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe4" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe4" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe4" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe4" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>5、遇到重大难题时，往往会举棋不定、难以抉择</p><br>
+            <input type="radio" name="exe5" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe5" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe5" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe5" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe5" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back first-back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>6、遇到困难时，可以适当发泄情绪</p><br>
+            <input type="radio" name="exe6" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe6" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe6" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe6" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe6" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>7、试图通过休假的方式，暂时把烦恼抛开</p><br>
+            <input type="radio" name="exe7" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe7" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe7" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe7" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe7" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>8、遇到困难会向亲戚或同学寻求建议。</p><br>
+            <input type="radio" name="exe8" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe8" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe8" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe8" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe8" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>9、遇到困难时会借鉴他人处理相似情景的办法</p><br>
+            <input type="radio" name="exe9" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe9" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe9" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe9" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe9" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>10、面对困难时，首当其冲的是寻找解决问题的办法</p><br>
+            <input type="radio" name="exe10" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe10" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe10" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe10" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe10" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>11、压力太大时会把自己封闭起来</p><br>
+            <input type="radio" name="exe11" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe11" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe11" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe11" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe11" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>12、有时会埋怨生活过于艰难</p><br>
+            <input type="radio" name="exe12" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe12" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe12" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe12" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe12" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>13、有时会直接对引发问题的人或事表达不满</p><br>
+            <input type="radio" name="exe13" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe13" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe13" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe13" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe13" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>14、遇到无法解决的困难时，睡觉是一个很好的解脱方式</p><br>
+            <input type="radio" name="exe14" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe14" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe14" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe14" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe14" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>15、喜欢从自己擅长的角度出发思考问题，以规避自己的不足</p><br>
+            <input type="radio" name="exe15" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe15" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe15" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe15" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe15" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>16、会与朋友和家人讨论如何缓解面临的压力</p><br>
+            <input type="radio" name="exe16" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe16" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe16" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe16" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe16" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>17、面对困难时，常客观分析自己的优势和劣势</p><br>
+            <input type="radio" name="exe17" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe17" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe17" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe17" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe17" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>18、善于总结和整理过去失败中的经验与不足</p><br>
+            <input type="radio" name="exe18" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe18" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe18" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe18" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe18" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>19、沉迷于对过往经历的回忆之中，难以解脱</p><br>
+            <input type="radio" name="exe19" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe19" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe19" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe19" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe19" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>20、压力太大时，情绪很难控制</p><br>
+            <input type="radio" name="exe20" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe20" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe20" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe20" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe20" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>21、尝试寻找压力源，从而更好地应对压力</p><br>
+            <input type="radio" name="exe21" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe21" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe21" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe21" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe21" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>22、把困难看成锻炼自己的好机会</p><br>
+            <input type="radio" name="exe22" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe22" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe22" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe22" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe22" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>23、理智地思考应对困境的方法</p><br>
+            <input type="radio" name="exe23" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe23" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe23" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe23" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe23" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>24、有压力才有进步</p><br>
+            <input type="radio" name="exe24" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe24" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe24" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe24" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe24" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>25、会幻想自己有超人的本领。</p><br>
+            <input type="radio" name="exe25" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe25" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe25" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe25" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe25" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>26、憧憬自己已经解决了当前面临的难题</p><br>
+            <input type="radio" name="exe26" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe26" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe26" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe26" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe26" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>27、有时会责备自己能力不足</p><br>
+            <input type="radio" name="exe27" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe27" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe27" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe27" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe27" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>28、压力太大时会烦躁不安，无从下手</p><br>
+            <input type="radio" name="exe28" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe28" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe28" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe28" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe28" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>29、面对困难时会期待奇迹发生</p><br>
+            <input type="radio" name="exe29" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe29" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe29" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe29" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe29" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>30、挫折和痛苦是对自己的一种考验和锻炼</p><br>
+            <input type="radio" name="exe30" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe30" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe30" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe30" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe30" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>31、能以幽默或玩笑的方式化解尴尬。</p><br>
+            <input type="radio" name="exe31" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe31" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe31" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe31" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe31" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>32、哪怕遇到不公平的事情，也能说服自己接受现实</p><br>
+            <input type="radio" name="exe32" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe32" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe32" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe32" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe32" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>33、常能找出几种不同的解决问题的方法。</p><br>
+            <input type="radio" name="exe33" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe33" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe33" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe33" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe33" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>34、会祈祷神灵保佑自己顺利地解决难题</p><br>
+            <input type="radio" name="exe34" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe34" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe34" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe34" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe34" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>35、遇到困难时会抱怨自己的运气太差</p><br>
+            <input type="radio" name="exe35" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe35" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe35" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe35" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe35" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward">下一页</button>
+            </div>
+            
+            <div class="exe-container" style="display:none">
+            <div class="exe">
+            <p>36、喜欢找人聊天、倾诉，以减轻烦恼</p><br>
+            <input type="radio" name="exe36" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe36" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe36" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe36" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe36" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>37、遇到困难时会主动寻求别人的理解和同情</p><br>
+            <input type="radio" name="exe37" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe37" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe37" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe37" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe37" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>38、遇到困难会产生"如果这不是真的就好了"的想法</p><br>
+            <input type="radio" name="exe38" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe38" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe38" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe38" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe38" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>39、对自己不利的事情真实发生时，往往觉得很难相信</p><br>
+            <input type="radio" name="exe39" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe39" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe39" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe39" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe39" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <div class="exe">
+            <p>40、常以无所谓的态度来掩饰内心真实感受</p><br>
+            <input type="radio" name="exe40" class="chec"><p> A 不符合</p><br>
+            <input type="radio" name="exe40" class="chec"><p> B 不太符合</p><br>
+            <input type="radio" name="exe40" class="chec"><p> C 不确定</p><br>
+            <input type="radio" name="exe40" class="chec"><p> D 有点符合</p><br>
+            <input type="radio" name="exe40" class="chec"><p> E 非常符合</p><br>
+            </div>
+            <button class="back">上一页</button><button class="forward last-forward">下一页</button>
+            </div>            
+    </div>
+
+
+
+    <!-- 不允许注册 -->
+    <!-- <div class="no-sign">
+        <img src="./img/x.png" alt="不能注册" style="width:88px;height:88xp;">
+        <h2 style="color:#4c4b4b">操作错误</h2>
+        <p>本网站未开放注册，敬请期待！</p>
+        <button class="confirm">OK</button>
+    </div> -->
+    <!-- 页脚 -->
+    <!-- <div class="footer">
+        <p>
+            Python123 Version 408 更新于 06月 10日 09:44 关于 Python123 Development Team All rights reserved. <br>
+            苏ICP备16066778号-1
+        </p> 
+    </div> -->
+
+    <script src="./js/reply2.js"></script>    
+</body>
+</html>
